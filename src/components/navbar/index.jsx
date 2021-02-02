@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from './CartWidget.jsx';
 
 const NavbarComponent = () => {
 
@@ -9,11 +10,13 @@ const NavbarComponent = () => {
             <nav className="navbar navbar-dark bg-dark">
 
                 <ul className="nav">
-                    <li className="nav-item"><a href="" className="nav-link">Servicios</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Promos</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Clientes</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Consultá ya</a></li>
+                    <li className="nav-item"><a href="" className="nav-link text-white">Servicios</a></li>
+                    <li className="nav-item"><a href="" className="nav-link text-white">Promos</a></li>
+                    <li className="nav-item"><a href="" className="nav-link text-white">Clientes</a></li>
+                    <li className="nav-item"><a href="" className="nav-link text-white">Consultá ya</a></li>
                 </ul>
+
+                <CartWidget/>
 
             </nav>
         </div>
