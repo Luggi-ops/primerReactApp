@@ -16,7 +16,7 @@ const ItemCount = ({stock}) =>{
             <span className="d-block">{count}</span>
             
 
-            <button className="btn btn-dark" onClick={() =>{
+            <button className="btn btn-dark mr-2" onClick={() =>{
                 console.log(stock);
                 if(count < stock){
                     setCount(count+1);
