@@ -5,7 +5,7 @@ const CartWidget = () =>{
     return (
 
         <div>
-            <a href="">
+            <a href="#">
                 <FontAwesomeIcon icon={faShoppingCart} />
             </a>
 

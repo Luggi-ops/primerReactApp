@@ -6,7 +6,7 @@ const CardComponent = ({stock}) =>{
     return (
 
         <>   
-            <div className="col s12 m12">
+            <div className="col s12 m3 valign-wrapper">
                 <div className="card z-depth-3">
                     <div className="card-body">
                         <h4 className="card-title">Producto</h4>

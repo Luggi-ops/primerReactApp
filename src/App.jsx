@@ -1,9 +1,8 @@
-import logo from './logo.png';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import NavbarComponent from './components/navbar/';
 import ItemListContainer from './containers/ItemListContainer/';
-
+import FooterComponent from './components/Footer/';
 
 
 function App() {
@@ -11,12 +10,14 @@ function App() {
 
   return (
     
-    <div>
+    <>
       <NavbarComponent />
       
-      <ItemListContainer greeting={"Bienvenidos a nuestra tienda online!"}/>  
+      <ItemListContainer greeting={"Bienvenidos a nuestra tienda online!"}/> 
 
-    </div>
+      <FooterComponent />
+
+    </>
   );
 }
 

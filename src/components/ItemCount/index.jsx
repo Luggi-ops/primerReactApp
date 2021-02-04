@@ -16,21 +16,21 @@ const ItemCount = ({stock}) =>{
             <span className="d-block">{count}</span>
             
 
-            <a className="btn-floating btn-large waves-effect waves-light light-blue accent-2" onClick={() =>{
+            <button className="btn-floating btn-large waves-effect waves-light light-blue accent-2 mr-5" onClick={() =>{
                 if(count < stock){
                     setCount(count+1);
-                }
+                } //implementar else mensaje de no hay stock
                 
             }}><FontAwesomeIcon icon={faPlus}/>
             
-            </a>
+            </button>
 
 
-            <a className="btn-floating btn-large waves-effect waves-light light-blue accent-2" onClick={() =>{
-                if(count != 0){
+            <button className="btn-floating btn-large waves-effect waves-light light-blue accent-2" onClick={() =>{
+                if(count !== 0){
                     setCount(count-1);
                 }
-            }}><FontAwesomeIcon icon={faMinus}/></a>
+            }}><FontAwesomeIcon icon={faMinus}/></button>
 
         </>
 
