@@ -6,7 +6,7 @@ const NavbarComponent = () => {
     return(
 
         <div>
-            <h1>Tienda de books de fotos</h1>
+            <h1>MAN</h1>
             <nav className="navbar navbar-dark bg-dark">
 
                 <ul className="nav">
