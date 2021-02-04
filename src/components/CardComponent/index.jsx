@@ -6,12 +6,14 @@ const CardComponent = ({stock}) =>{
     return (
 
         <>   
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Producto</h4>
-                    <p>Cantidad disponible: {stock}</p>
+            <div className="col s12 m12">
+                <div className="card z-depth-3">
+                    <div className="card-body">
+                        <h4 className="card-title">Producto</h4>
+                        <p>Cantidad disponible: {stock}</p>
 
-                    <ItemCount stock={stock}/>
+                        <ItemCount stock={stock}/>
+                    </div>
                 </div>
             </div>
         </>

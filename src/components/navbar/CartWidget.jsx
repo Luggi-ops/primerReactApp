@@ -5,7 +5,7 @@ const CartWidget = () =>{
     return (
 
         <div>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a href="">
                 <FontAwesomeIcon icon={faShoppingCart} />
             </a>
 

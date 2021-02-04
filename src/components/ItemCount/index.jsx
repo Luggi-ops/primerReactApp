@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPlusSquare} from '@fortawesome/free-solid-svg-icons';
-import {faMinusSquare} from '@fortawesome/free-solid-svg-icons';
+import {faPlus} from '@fortawesome/free-solid-svg-icons';
+import {faMinus} from '@fortawesome/free-solid-svg-icons';
 import React, {useState} from 'react';
 
 
@@ -16,20 +16,21 @@ const ItemCount = ({stock}) =>{
             <span className="d-block">{count}</span>
             
 
-            <button className="btn btn-dark mr-2" onClick={() =>{
-                console.log(stock);
+            <a className="btn-floating btn-large waves-effect waves-light light-blue accent-2" onClick={() =>{
                 if(count < stock){
                     setCount(count+1);
                 }
                 
-            }}><FontAwesomeIcon icon={faPlusSquare}/></button>
+            }}><FontAwesomeIcon icon={faPlus}/>
+            
+            </a>
 
 
-            <button className="btn btn-dark" onClick={() =>{
+            <a className="btn-floating btn-large waves-effect waves-light light-blue accent-2" onClick={() =>{
                 if(count != 0){
                     setCount(count-1);
                 }
-            }}><FontAwesomeIcon icon={faMinusSquare}/></button>
+            }}><FontAwesomeIcon icon={faMinus}/></a>
 
         </>
 

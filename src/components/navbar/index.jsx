@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import CartWidget from './CartWidget.jsx';
 
 const NavbarComponent = () => {
@@ -6,18 +5,19 @@ const NavbarComponent = () => {
     return(
 
         <div>
-            <h1>MAN</h1>
-            <nav className="navbar navbar-dark bg-dark">
-
-                <ul className="nav">
-                    <li className="nav-item"><a href="" className="nav-link text-white">Servicios</a></li>
-                    <li className="nav-item"><a href="" className="nav-link text-white">Promos</a></li>
-                    <li className="nav-item"><a href="" className="nav-link text-white">Clientes</a></li>
-                    <li className="nav-item"><a href="" className="nav-link text-white">Consultá ya</a></li>
-                </ul>
-
-                <CartWidget/>
-
+            <nav>
+                <div className="nav-wrapper light-blue accent-2">
+                    <a href="#" className="brand-logo">MANSport</a>
+                    <ul id="nav-mobile" className="right hide-on-med-and-down">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><CartWidget /></li>
+                        
+                    </ul>
+                </div>
             </nav>
         </div>
 
